@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Import Products</title>
+</head>
+<body>
+    <div class="container">
+        <div class="import-section">
+            <input type="file" id="fileInput" accept=".json">
+            <button onclick="importData()">Import Data</button>
+        </div>
+        <div class="display-section">
+            <select id="availableFields" multiple></select>
+            <div class="controls">
+                <button onclick="addSelectedFields()">>></button>
+                <button onclick="removeSelectedFields()">&lt;&lt;</button>
+            </div>
+            <select id="displayFields" multiple></select>
+        </div>
+        <div id="tableContainer" class="table-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
